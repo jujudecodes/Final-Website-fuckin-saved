@@ -11,33 +11,84 @@
 	
 <body>
 	
-<a class="button js-button">About</a>
-<a class="button js-button">Works</a>
-<a class="button js-button">Contact</a>
+	<! -- Ca 'est la bannière de base' -->
+<header role="banner" class="top pv8 u-fixed header--dark">
+<nav role="navigation" class="wrap u-1/1 u-h-100 u-flex u-justify-between">
 
-<div class="cursor">
-  <div class="cursor__pointer js-cursor__pointer"></div>
-  <div class="cursor__follow js-cursor__follow"></div>
-</div>
+	<div class="u-flex u-align-center">
+		<a aria-current="page" class="active" href="/">
+			<div class="relative" style="width: 100px; height: 31.15px;">
+				
+				<div class="absolute absolute--tl c-animated-wordmark c-animated-wordmark--white" 
 
-<div id="app">
-  <header class="header">
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li v-for="item in items" class="header__item"><a class="button js-button">{{ item.page }}</a></li>
-      </ul>
-    </nav>
-  </header>
+				style="width: 100px;
+				height: 31.15px;
+				background-image: url(&quot;/static/media/wordmark-animation-white.588fb5ae.png&quot;);
+				 background-position-y: -623px;
+				  background-size: 100px;">
+				  	
+				  </div>
 
-  <div class="cursor">
-    <div class="cursor__pointer" ref="cursorPointer"></div>
-    <div class="cursor__follow" ref="cursorFollow"></div>
-  </div>
-</div>
+				  <div class="absolute absolute--tl c-animated-wordmark c-animated-wordmark--black" 
+				  style="width: 100px;
+				  height: 31.15px;
+				  background-image: url(&quot;/static/media/wordmark-animation-black.c205d831.png&quot;);
+				   background-position-y: -623px; background-size: 100px;
+
+				   ">
+				   	
+				   </div>
+				 </div>
+				</a>
+			</div>
+
+
+
+
+			<div class="u-flex u-align-center">
+				<div class="u-flex u-align-center relative">
+					<div class="u-flex u-align-center animate-opacity opacity-1">
+						<div class="c-dropdown-container relative">
+							<button type="button" class="c-dropdown__cover fill c-dropdown--closed" tabindex="-1"></button>
+
+							<div class="c-dropdown__content u-flex u-align-center u-h-100">
+								<button type="button" class="c-dropdown__trigger u-1/1@s " aria-expanded="false" aria-haspopup="true" aria-controls="navigation-categories-logged-out-dropdown">
+
+									<p class="ml32 f-text-2 tablet-and-desktop-only animate-opacity u-link-white u-link-white--alt u-flex u-align-center">
+										<span class="mr8">Categories</span>
+
+										<svg class="" fill="currentColor" width="12px" height="12px" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
+											<path d="M1.9,3.1L8,9.2l6.1-6.1L16,4.9l-8,8l-8-8L1.9,3.1z" fill="currentColor"></path>
+
+										</svg>
+									</p>
+								</button>
+
+								<div id="navigation-categories-logged-out-dropdown" class="c-dropdown c-dropdown--small c-dropdown--left u-box-shadow u-border-radius--s c-dropdown--closed c-dropdown--darker-mode">
+							
+								</div>
+							</div>
+						</div>
+
+						<a class="ml32 f-text-2 tablet-and-desktop-only animate-opacity u-link-white u-link-white--alt" href="/calendar">Calendar</a>
+
+						<a class="ml32 f-text-2 tablet-and-desktop-only animate-opacity u-link-white u-link-white--alt" href="/careers">Careers</a>
+
+					</div>
+
+					<div class="absolute u-1/1 u-text-right animate-opacity opacity-0 pointer-events-none" style="right: 160px;">
+						
+					</div>
+
+					<div class="u-flex u-align-center animate-opacity">
+						<a class="ml32 f-text-2 u-flex-hold u-link-white u-link-white--alt animate-opacity opacity-1" href="/login">Log in</a>
+
+						<a class="ml32 u-flex-hold dds-button dds-button--default dds-button--default--size-m dds-button--size-m dds-button--link" href="/join"><p class="u-flex u-align-center u-justify-center u-1/1 animate-opacity f-text-2 opacity-1">
+
+							<div class="absolute absolute--tl c-animated-wordmark c-animated-wordmark--black" 
 
 	
-	
-		<! chargement des sites et fichiers  -->
+		<---! chargement des sites et fichiers  -->
 
 	
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
